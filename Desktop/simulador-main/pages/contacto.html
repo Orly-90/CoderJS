@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.slides.js"></script>
+    <link rel="stylesheet" href="../estilos.css"><!--para usar CSS, lo enlazamos al nombre de nuestro archivo-->
+    <title>Vector</title>
+</head>
+<body>
+    <header>
+        <nav class="menu"> <!--aqui dentro van los menues de navegación-->
+            <a href="">Las mejores reparaciones</a>
+            <ul class=""> <!--apertura para menu, "ul" para columnas-->
+                <li><span class="icon-home"></span><a href="../index.html">Inicio</a></li>
+                <li><span class="icon-mobile"></span>Celulares
+                    <ul>
+                        <li>Reparación de componentes</li>
+                        <li>Recuperación de mojado</li>
+                        <li>Liberación y desbloqueo</li>
+                    </ul> 
+                </li> <!--cierre-->
+                <li><span class="icon-classic-computer"></span>Pc's
+                    <ul>
+                        <li>Instalación de software</li>
+                        <li>Reparación de hardware</li>    
+                        <li>Limpieza y recuperación de datos</li>
+                    </ul> 
+                </li> <!--cierre-->
+                <li><span class="icon-mail"></span><a href="contacto.html">Contacto</a>
+                </li> <!--cierre-->
+            </ul> <!--cierre para menu-->
+        </nav> <!--cierre de menues de navegacion-->
+    </header>
+    <fieldset>
+        <legend>Complete sus datos</legend>
+        <form action="enviar.php" method="post" enctype="text/plain">
+            <label for="nombre1">Nombre</label>
+            <input type="text" placeholder="ingrese nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="ingrese apellido">
+            <label for="">Nro de Celular</label>
+            <input type="number" placeholder="ingrese nro">
+            <label for="">Correo</label>
+            <input type="mail">
+            <label for="">Comentarios</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit">
+            <input type="reset" value="Borrar formulario">
+        </form>
+    </fieldset>
+    <footer> <!--etiqueta para pie de pagina-->
+        <div class="GaleCel">
+            <div class="img img1">item1</div>
+            <div class="img img2">item2</div>
+            <div class="img img3">item3</div>
+            <div class="img img4">item4</div>
+            <div class="img img5">item5</div>
+            <div class="img img6">item6</div>
+            <div class="img img7">item7</div>
+            <div class="img img8">item8</div>
+        </div>
+    </footer>
+    
+</body>
+</html>

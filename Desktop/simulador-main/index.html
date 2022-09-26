@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Karla:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="fonts/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- ICONOS -->
+  <script src="https://kit.fontawesome.com/d7d9422d2d.js" crossorigin="anonymous"></script>
+  <title>Orlando Garnica (simulador interactivo)</title>
+</head>
+<header>
+<body id="body" onload="OnLoad()">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="https://github.com/Orly-90" target="_blank">
+      <div id="avatar"></div>
+    </a>
+          <a class="navbar-brand" href="index.html"> VECTOR </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="#Celulares">Celulares<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Computadoras</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#contactenos">Contacto</a>
+              </li>
+            </ul>
+          </div>
+    <div id="avatar"></div>
+    <div id="esconder">
+      <p class="tot">Total: $</p>
+      <p id="total">0</p>
+      <a id="contador" href="#carro">0</a>
+    </div>
+        <a class="carro" href="#carro"><i class="fa-solid fa-cart-shopping" id="iconoCarrito"></i></a>
+    <a class="x" href="#nav"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+    <ul class="carro_lista" id="carro"></ul> 
+  </nav>
+</header>
+
+<!-- Slides de la pagina -->
+<div class="container-fluid data-aos=">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow -->
+      <div class="carousel-inner carruseles">
+          <div class="carousel-item active fotoCarrusel" >
+              <img src="galeria/reparacion.jpg" alt="" width="100%" height="400px">
+          </div>
+          <div class="carousel-item fotoCarrusel">
+              <img src="galeria/reparacion2.jpg" alt="" width="100%" height="400px">
+          </div>
+          <div class="carousel-item fotoCarrusel">
+              <img src="galeria/Gale-2.png" alt="" width="100%" height="400px">
+          </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev btn-previo" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon anterior" ></span>
+      </a>
+      <a class="carousel-control-next btn-siguiente" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon siguiente"></span>
+      </a>
+  </div>
+</div>
+
+<div class="  nosotros col-lg-9" > <!-- Quien soy -->
+  <div class="row">
+      <div class="izquierda col-xs-12 col-md-6 col-lg-6">
+
+      </div>
+      <div class="derecha col-xs-12 col-md-6 col-lg-6">
+          <h3>Quienes somos</h3>
+          <p>Técnicos en computación y celulares. La basta experiencia nos hizo darnos cuenta que estos aparatos se han convertido en nuestras herramientas de trabajo y que precisamos una reparación CASI inmediata. De esa necesidad de los usuarios nace un proyecto propio...Vector; Fruto de años de experiencia tanto local como a nivel nacional.
+          </p>
+      </div> 
+  </div>
+</div>
+  <h1 id="principio"></h1>
+  <div id="containerInputs">
+    <input class="input" id="nombreProductoBuscar" type="text" placeholder="Producto a buscar">
+    <div>
+        <input class="input" id="desde" type="number" placeholder="Desde $ (pesos)">
+        <input class="input" id="hasta" type="number" placeholder="Hasta $ (pesos)">
+        <button id="btnBuscar">BUSCAR</button>
+        <a id="volver"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+    </div>
+  </div>
+  <section id="container">
+    <h2 class="barra">Cargando pagina...</h2>
+    <progress id="barra"></progress>
+  </section>
+
+  <fieldset class="container" id="contactenos" >
+    <legend>Aquí podes hacer tu reserva, no dudes en contactarnos!</legend>
+    <form id="form" action="">
+      <label for="nombre" >Nombre</label>
+      <input id="Nombre" type="text" placeholder="ingrese nombre" >
+      <label for="apellido" >Apellido</label>
+      <input id="Apellido" type="text" placeholder="ingrese apellido">
+      <label for="">Nro de Celular</label>
+      <input id="Numero" type="number" placeholder="ingrese nro">
+      <label for="">Correo</label>
+      <input id="Mail" type="mail">
+      <label for="">Comentarios</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button>
+          <input id="btnCapturar" type="submit" value="Reservar" > <!-- boton de reservar -->
+      </button>
+      <button>
+          <input  type="reset" value="Borrar formulario"> <!-- boton de borrar formulario -->
+      </button>
+      <p id="advertencia"></p>
+    </form>  
+    <h4>Buscar Presupuesto</h4>
+    <select id="Presupuestos">
+      <option selected>Consulta Presupuesto</option>
+      <option value="Modulo">Modulo</option>
+      <option value="Cambio de Pin">Cambio de pin</option>
+      <option value="Cambio de Bateria">Cambio de bateria</option>
+    </select>
+    <button>
+      <input type="button" value="Consultar" id="btnPresupuesto">
+    </button>
+</fieldset>
+
+  <h4>Ver turnos reservados</h4>
+  <button class="Turnos">
+    <input id="btnVer" type="button" value="Ver Turno">
+  </button>
+  <ul id="listaReservados">
+    
+  </ul>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script async src="JS/inventario.js"></script>
+  <script async src="JS/principal.js"></script>
+  <script async src="JS/carrito.js"></script>
+  <script async src="JS/stock.js"></script>
+  <script async src="JS/archivo.js"></script>
+</body>
