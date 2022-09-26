@@ -55,9 +55,6 @@ fetch('https://api.github.com/users/Orly-90')
     }
 
     const arrayDeReservas = [];//preparo el array
-    const copiaArrayDeReservas = [...arrayDeReservas,'Bahia Blanca', '8000']; //copia el array original
-    console.log(copiaArrayDeReservas);
-            
 
     let form1 = document.getElementById("form")
     let parrafo = document.getElementById("advertencia");

@@ -41,6 +41,8 @@ fetch('https://api.github.com/users/Orly-90')
     }).catch(error=> {
           Swal.fire("error");
       });
+
+
   //Traer productos de la base de datos.
 const ReturnProducts =() => {
   return new Promise((resolve) => {
@@ -54,6 +56,7 @@ const ReturnProducts =() => {
     },3000);
   });
 };
+
 //Retornar los productos traidos de la base de datos.
 ReturnProducts().then((respuesta)=>{
   listadoDeProductos = respuesta;
@@ -122,7 +125,7 @@ function ShowProducts(array) {
                         <h3 class="pre" id="precio${codigo}">${precio}</h3>
                       </div>
                       <div id="codigo${codigo}" class="codigo">
-                        <h4>Código</h4>  
+                        <h4>Cód</h4>  
                         <h4>${codigo}</h4>
                       </div>
                         <button id="btn${codigo}" class="button"><span>AGREGAR</span></button>

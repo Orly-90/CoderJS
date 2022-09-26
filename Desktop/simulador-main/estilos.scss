@@ -8,6 +8,14 @@ body{
     background-color: #f8f8f8;
 }
 
+// API GIT HUB
+.avatar {
+  width: 60px;
+  height: 60px;
+  margin-left: 320px;
+  border: 3px solid rgb(204, 218, 204);
+  border-radius: 50%;
+}
  /* BARRA SUPERIOR */
 #nav {
     position: fixed;
@@ -107,35 +115,35 @@ form {
 }
 #btnBuscar {
         border-radius: 10px;
+        background-color: #e2e74e;
 } 
 #btnBuscar:active {
         transform: scale(0.9);
 }
     
     /*Zona de formulario*/
-    form {
-        width: 450px;
-        margin: auto; //*queda centrado todo el formulario*/
-        padding: 10px 20px; //* relleno vertical y horizontal*/
-    }
-    fieldset{
-        background-image: url();
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: auto;
-        border: transparent;
+form {
+    width: 450px;
+    margin: auto; //*queda centrado todo el formulario*/
+    padding: 10px 20px; //* relleno vertical y horizontal*/
+}
+fieldset{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border: transparent;
     
+}
+legend{
+    text-align: center;
+    font-size: 20px;
+}
     
-    }
-    legend{
-        text-align: center;
-        font-size: 20px;
-    }
-    
-    label{
-        margin-bottom: 0;
-        margin-top: 8px;
-    }
+label{
+    margin-bottom: 0;
+    margin-top: 8px;
+}
     button{
         width: 100%;
         margin-bottom: 20px; //*margen arriba*/
@@ -228,10 +236,6 @@ form {
     font-size: 26px;
     margin: 7px;
   }
-  h4 {
-    margin: 0;
-    padding: 0;
-  }
   .precio {
     width: 230px;
     height: 30px;
@@ -239,14 +243,19 @@ form {
   .pre {
     display: contents;
   }
-  .codigo {
+.codigo {       //Codigo del articulo 
     position: absolute;
     margin-top: 20px;
-    width: 55px;
-    height: 40px;
+    width: 60px;
+    height: auto;
+    color: black;
+    font-size: 20px;
     border-radius: 30%;
-    border: 1px solid rgb(34, 255, 0);
-    background-color: rgb(22, 96, 47);
+    border: 1px solid rgb(56, 61, 55);
+    h4{
+      font-size: 20px;
+    }
+
   }
   #code {
     display: none;
@@ -308,14 +317,14 @@ form {
   .button span {
     position: relative;
   }
-  .button::before {
+  .button::before { // Efecto subclases Boton Agregar
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(12, 69, 20);
+    background-color: rgb(220, 230, 109);
     border-radius: 10px;
     opacity: 0.4;
     clip-path: circle(0 at center);
@@ -324,7 +333,7 @@ form {
   .button:hover:before {
     clip-path: circle(100px at center);
   }
-  .sinStock {
+  .sinStock {       //CARTEL DE FONDO SIN STOCK
     position: absolute;
     display: none;
     color: black;
@@ -344,13 +353,7 @@ form {
     text-shadow: 3px 3px 10px rgb(255, 255, 255);
     left: 30px;
   }
-  .avatar {
-    width: 60px;
-    height: 60px;
-    margin-left: 320px;
-    border: 3px solid green;
-    border-radius: 50%;
-  }
+  
  
   i {
     color: rgb(14, 46, 14);

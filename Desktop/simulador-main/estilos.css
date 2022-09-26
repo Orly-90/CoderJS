@@ -9,6 +9,14 @@ body {
   background-color: #f8f8f8;
 }
 
+.avatar {
+  width: 60px;
+  height: 60px;
+  margin-left: 320px;
+  border: 3px solid rgb(204, 218, 204);
+  border-radius: 50%;
+}
+
 /* BARRA SUPERIOR */
 #nav {
   position: fixed;
@@ -117,6 +125,7 @@ header {
 
 #btnBuscar {
   border-radius: 10px;
+  background-color: #e2e74e;
 }
 
 #btnBuscar:active {
@@ -247,11 +256,6 @@ h3 {
   margin: 7px;
 }
 
-h4 {
-  margin: 0;
-  padding: 0;
-}
-
 .precio {
   width: 230px;
   height: 30px;
@@ -264,11 +268,15 @@ h4 {
 .codigo {
   position: absolute;
   margin-top: 20px;
-  width: 55px;
-  height: 40px;
+  width: 60px;
+  height: auto;
+  color: black;
+  font-size: 20px;
   border-radius: 30%;
-  border: 1px solid rgb(34, 255, 0);
-  background-color: rgb(22, 96, 47);
+  border: 1px solid rgb(56, 61, 55);
+}
+.codigo h4 {
+  font-size: 20px;
 }
 
 #code {
@@ -348,7 +356,7 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(12, 69, 20);
+  background-color: rgb(220, 230, 109);
   border-radius: 10px;
   opacity: 0.4;
   -webkit-clip-path: circle(0 at center);
@@ -380,14 +388,6 @@ h1 {
   font-size: 32px;
   text-shadow: 3px 3px 10px rgb(255, 255, 255);
   left: 30px;
-}
-
-.avatar {
-  width: 60px;
-  height: 60px;
-  margin-left: 320px;
-  border: 3px solid green;
-  border-radius: 50%;
 }
 
 i {
