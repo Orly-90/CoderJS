@@ -17,6 +17,7 @@ body{
   border-radius: 50%;
 }
  /* BARRA SUPERIOR */
+/* BARRA DE NAVEGACION */
 #nav {
     position: fixed;
     width: 100%;
@@ -25,22 +26,22 @@ body{
     border-radius: 0 0 20px 20px;
     z-index: 2;
 }
-    body{
-        background-color: #f8f8f8;
-    }
-    .avatar {
-        width: 60px;
-        height: 60px;
-        margin-left: 320px;
-        border: 3px solid rgb(200, 204, 254);
-        border-radius: 50%;
-    }
-    header{
-        width: 100%;
-    }
-      /* BARRA DE NAVEGACION */
+body{
+    background-color: #f8f8f8;
+}
+.avatar {
+    width: 60px;
+    height: 60px;
+    margin-left: 320px;
+    border: 3px solid rgb(200, 204, 254);
+    border-radius: 50%;
+}
+header{
+    width: 100%;
+}
+  
     
-    /* Zona de slides*/
+/* Zona de slides*/
     .btn-previo {
         background-image: linear-gradient(to left, rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
     }
@@ -57,40 +58,40 @@ body{
         height: 40px;
     }
     //***SOBRE MI***//
-    .nosotros{
-        margin-top: 30px;
-        height: 500px;
+.nosotros{
+    margin-top: 30px;
+    height: 500px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+}
+.izquierda{
+    height: 500px;
+    background-image: url(imagenes/quienSoy.jpg);
+    background-size: cover;
+}
+.derecha{
+    h3{
+        text-align: center;
+        font-size: 35px;
     }
-    .row{
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
+    p{
+        text-align: justify;
+        font-size: 28px;
     }
-    .izquierda{
-        height: 500px;
-        background-image: url(imagenes/quienSoy.jpg);
-        background-size: cover;
-    }
-    .derecha{
-        h3{
-            text-align: center;
-            font-size: 35px;
-        }
-        p{
-            text-align: justify;
-            font-size: 28px;
-        }
     
-        &:hover{
-            transition: .9s;
-            background-color: rgba(188, 188, 188, 0.765);
-        }
+    &:hover{
+        transition: .9s;
+        background-color: rgba(188, 188, 188, 0.765);
     }
-    .izquierda{
-        background-image: url(galeria/quienSoy.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+}
+.izquierda{
+    background-image: url(galeria/quienSoy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   //***FIN SOBRE MI***//
 
 #containerInputs input{
@@ -112,7 +113,7 @@ body{
         transform: scale(0.9);
 }
     
-    /*Zona de formulario*/
+/******Zona de formulario******/
 form {
     width: 450px;
     margin: auto; //*queda centrado todo el formulario*/
@@ -135,7 +136,7 @@ label{
     margin-bottom: 0;
     margin-top: 8px;
 }
-    button{
+button{
         width: 100%;
         margin-bottom: 20px; //*margen arriba*/
         border: none;
@@ -147,29 +148,29 @@ label{
             transform: translateY(4px) translateX(4px);
             box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);;
         }
-    }
-    input, textarea{
-        padding: 3px;
-        width: 100%;
-        font-size: 15px;
-        border-radius: 5px;
-    }
-    textarea{
-        min-height: 100px;
-        max-height: 200px;
-        max-width: 100%;
-    }
-    /*FIN Zona de formulario*/
+}
+input, textarea{
+    padding: 3px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+    /******FIN Zona de formulario******/
     .Turnos{
         width: 50%;
         
     }
-      /* Zona de Pie de Pagina */
-    footer h2{
-        margin-top: 30px;
-        text-align: center;
-        font-size: 30px;
-    }
+  /* Zona de Pie de Pagina */
+footer h2{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
 
 .input {
     font-size: 20px;
@@ -183,37 +184,36 @@ label{
     color: rgb(0, 0, 0);
     padding: 15px;
   }
- 
-  .content {
-    width: 550px;
-    background-color: rgba(17, 87, 16, 0.716);
-    font-size: 28px;
-    color: white;
-    padding: 1px;
-  }
+
+.content {
+  width: 550px;
+  background-color: rgba(17, 87, 16, 0.716);
+  font-size: 28px;
+  color: white;
+  padding: 1px;
+}
   /* ARTICULOS */
-  #nombreProductoBuscar {
-    margin-top: 110px;
-    font-size: 20px;
-    background-color: white;
-    color: rgba(51, 54, 43, 0.982);
-    font-weight: bolder;
-  }
+#nombreProductoBuscar {
+  margin-top: 110px;
+  font-size: 20px;
+  background-color: white;
+  color: rgba(51, 54, 43, 0.982);
+  font-weight: bolder;
+}
   
-  .articulo {
-    display: inline-flexbox;
-    background-color: rgba(54, 133, 11, 0.213);
-    margin: 10px;
-    margin-left: 25px;
-    border: 10px solid rgb(81, 85, 80);
-    border-radius: 0 35px;
-    width: 230px;
-    height: 360px;
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 24px;
-    box-shadow: 4px 4px 25px gray;
-  }
+.articulo { //CARD DE ARTICULO
+  display: inline-flexbox;
+  background-color: rgba(54, 133, 11, 0.213);
+  margin: auto;
+  border: 10px solid rgb(81, 85, 80);
+  border-radius: 0 35px;
+  width: auto;
+  height: 360px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 24px;
+  box-shadow: 4px 4px 25px gray;
+}
   h2 {
     color: rgb(11, 51, 11);
     font-weight: bolder;
@@ -246,8 +246,7 @@ label{
     h4{
       font-size: 20px;
     }
-
-  }
+}
   #code {
     display: none;
   }
@@ -336,7 +335,7 @@ label{
     border-radius: 15px;
     padding: 5px;
   }
- 
+
   h1 {
     position: absolute;
     font-family: 'Courgette', cursive;
@@ -345,9 +344,7 @@ label{
     left: 30px;
   }
   
- 
   i {
-    color: rgb(14, 46, 14);
     font-size: 30px;
   }
   i:hover {
@@ -363,9 +360,8 @@ label{
     left: 28%;
     text-align: center;
     font-size: 30px;
-
-  
   }
+
   #barra {
     position: absolute;
     top: 50%;
@@ -385,77 +381,87 @@ label{
     color: rgb(17, 40, 17);
     font-weight: bolder;
   }
-  #contador {
-    position: absolute;
-    color: white;
-    font-size: 27px;
-    right: -17px;
-    top: -6px;
-    font-weight: bolder;
-    z-index: 1;
-   }
-  
-  .carro {
-    position: absolute;
-    list-style: none;
-    right: 70px;
+#contador {
+  position: absolute;
+  color: white;
+  font-size: 27px;
+  right: -17px;
+  top: -6px;
+  font-weight: bolder;
+  z-index: 1;
+}
+//BOTONES TIPO i
+i {
+  font-size: 30px;
+}
+i:hover {
+  font-size: 35px;
+}
+
+.carro { //BOTON CARRITO
+  position: absolute;
+  list-style: none;
+  right: 70px;
+  i{
     color: white;
   }
-  .x {
-    position: absolute;
-    right: 18px;
-    font-size: 20px;
+}
+.x { //BOTON LIMPIAR
+  position: absolute;
+  right: 18px;
+  font-size: 20px;
+  i{
     color: white;
   }
-  #volver {
-    display: none;
-  }
+}
+#volver {
+  display: none;
+}
   /* LISTA CARRITO */
-  .carro_lista {
-    position: fixed;
-    left: 0;
-    bottom: -15px;
-    top: 60px;
-    right: 0;
-    background-color: rgba(185, 178, 155, 0.956);
-    display: grid;
-    list-style: none;
-    clip-path: circle(0% at top right);
-    transition: clip-path 0.4s;
-    z-index: 12;
-  }
-  .carro_lista:target {
-    clip-path: circle(150% at top right);
-    z-index: 12;
-  }
-  p{
-    display: contents;
-  }
-  #list { 
-    text-align: center;
-    align-items: top; 
-    font-size: 33px;
-    color: rgb(17, 40, 17);
-    font-weight: bolder;
-  }
-  .btnEliminar {
-    height: 45px;
-    border-radius: 50%;
-    color: rgb(17, 40, 17);
-    background-color: rgb(14, 181, 14);
-  }
-  #imgCarro {
-    position: relative;
-    top: 30px;
-    right: 30px;
-    display: inline-flexbox;
-    width: 60px;
-    height: 60px;
-    border: solid 3px rgb(22, 75, 12);
-    margin-bottom: 10px;
-    box-shadow: 7px 7px 10px rgb(38, 38, 38);
-    border-radius: 50%;
-  }
+.carro_lista {
+  position: fixed;
+  left: 0;
+  bottom: -15px;
+  top: 60px;
+  right: 0;
+  background-color: rgba(185, 178, 155, 0.956);
+  display: grid;
+  list-style: none;
+  clip-path: circle(0% at top right);
+  transition: clip-path 0.4s;
+  z-index: 12;
+}
+.carro_lista:target {
+  clip-path: circle(150% at top right);
+  z-index: 12;
+}
+p{
+  display: contents;
+}
+#list { 
+  text-align: center;
+  align-items: top; 
+  font-size: 33px;
+  color: rgb(17, 40, 17);
+  font-weight: bolder;
+}
+.btnEliminar {
+  height: 45px;
+  border-radius: 50%;
+  color: rgb(17, 40, 17);
+}
+#imgCarro {
+  position: relative;
+  top: 30px;
+  right: 30px;
+  display: inline-flexbox;
+  width: 60px;
+  height: 60px;
+  
+  margin-bottom: 10px;
+  box-shadow: 7px 7px 10px rgb(38, 38, 38);
+  border-radius: 50%;
+}
   #imgCarro:hover {
     width: 150px;
     height: 150px;
@@ -487,6 +493,7 @@ label{
     font-weight: bolder;
     cursor: pointer;
   }
+  //****SECTOR DE MEDIA QUERIES****
   @media only screen and (max-width: 730px) {
     #temperatura {
       top: 47px;
@@ -534,12 +541,7 @@ label{
       font-size: 18px;
       margin-left: -30px;
     }
-    i {
-      font-size: 18px;
-    }
-    i:hover {
-      font-size: 23px;
-    }
+    
     h2 {
       font-size: 23px;
     }

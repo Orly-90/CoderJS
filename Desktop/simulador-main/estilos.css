@@ -18,6 +18,7 @@ body {
 }
 
 /* BARRA SUPERIOR */
+/* BARRA DE NAVEGACION */
 #nav {
   position: fixed;
   width: 100%;
@@ -43,7 +44,6 @@ header {
   width: 100%;
 }
 
-/* BARRA DE NAVEGACION */
 /* Zona de slides*/
 .btn-previo {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
@@ -121,7 +121,7 @@ header {
   transform: scale(0.9);
 }
 
-/*Zona de formulario*/
+/******Zona de formulario******/
 form {
   width: 450px;
   margin: auto;
@@ -172,7 +172,7 @@ textarea {
   max-width: 100%;
 }
 
-/*FIN Zona de formulario*/
+/******FIN Zona de formulario******/
 .Turnos {
   width: 50%;
 }
@@ -218,11 +218,10 @@ footer h2 {
 .articulo {
   display: inline-flexbox;
   background-color: rgba(54, 133, 11, 0.213);
-  margin: 10px;
-  margin-left: 25px;
+  margin: auto;
   border: 10px solid rgb(81, 85, 80);
   border-radius: 0 35px;
-  width: 230px;
+  width: auto;
   height: 360px;
   text-align: center;
   padding: 10px;
@@ -380,7 +379,6 @@ h1 {
 }
 
 i {
-  color: rgb(14, 46, 14);
   font-size: 30px;
 }
 
@@ -432,10 +430,20 @@ a {
   z-index: 1;
 }
 
+i {
+  font-size: 30px;
+}
+
+i:hover {
+  font-size: 35px;
+}
+
 .carro {
   position: absolute;
   list-style: none;
   right: 70px;
+}
+.carro i {
   color: white;
 }
 
@@ -443,6 +451,8 @@ a {
   position: absolute;
   right: 18px;
   font-size: 20px;
+}
+.x i {
   color: white;
 }
 
@@ -490,7 +500,6 @@ p {
   height: 45px;
   border-radius: 50%;
   color: rgb(17, 40, 17);
-  background-color: rgb(14, 181, 14);
 }
 
 #imgCarro {
@@ -500,7 +509,6 @@ p {
   display: inline-flexbox;
   width: 60px;
   height: 60px;
-  border: solid 3px rgb(22, 75, 12);
   margin-bottom: 10px;
   box-shadow: 7px 7px 10px rgb(38, 38, 38);
   border-radius: 50%;
@@ -586,12 +594,6 @@ p {
   h1 {
     font-size: 18px;
     margin-left: -30px;
-  }
-  i {
-    font-size: 18px;
-  }
-  i:hover {
-    font-size: 23px;
   }
   h2 {
     font-size: 23px;
